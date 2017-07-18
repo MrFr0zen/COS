@@ -48,7 +48,6 @@ public class Main extends JavaPlugin {
 	public int bDiamant = 25000;
 	public int bPlatin = 100000;
 	public int bLegendary = 250000;
-//git test
 	
 	  public void log(String log) {
 		    Bukkit.getConsoleSender().sendMessage(log);
