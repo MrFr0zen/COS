@@ -49,6 +49,8 @@ public class Main extends JavaPlugin {
 	public int bPlatin = 100000;
 	public int bLegendary = 250000;
 	
+//	s
+	
 	  public void log(String log) {
 		    Bukkit.getConsoleSender().sendMessage(log);
 		  }
