@@ -1,0 +1,15 @@
+main: ch.zombv.co.main.Main
+version: 1.0
+name: COS
+author: zombuilder1
+commands:
+     setCoins:
+          description: a
+     SetVSpawn:
+          description: b
+     ForceNPCSpawn:
+          description: c
+     coins:
+          description: coins
+     addcoins:
+          description: Fuege jemandem coins hinzu.
