@@ -78,7 +78,6 @@ public class Main extends JavaPlugin {
 		registerEvents();
 		registerCommands();
 		loadMountDetails();
-		instance = this;
 	    mysql = new MySQL();
 	    mysql.connect();
 	    mysql.CreateCosTable();
@@ -280,18 +279,18 @@ public void setMount(Inventory inv, int item, int slot) {
 		
 	}
 
-public void setPet(Inventory inv, int item, int slot) {
-	
-	ItemStack cat = new ItemStack(Material.ANVIL);
-	ItemMeta catm = cat.getItemMeta();
-	catm.setDisplayName("§bKatze");
-	getRarity(cat, catm);
-	cat.setItemMeta(catm);
-	setStuff(cat, "Silber", sSilver);
-	
-}
+	public void setPet(Inventory inv, int item, int slot) {
+		
+		ItemStack cat = new ItemStack(Material.ANVIL);
+		ItemMeta catm = cat.getItemMeta();
+		catm.setDisplayName("§bKatze");
+		getRarity(cat, catm);
+		cat.setItemMeta(catm);
+		setStuff(cat, "Silber", sSilver);
+		
+	}
 
-public void loadMountDetails() {
+	public void loadMountDetails() {
 		
 		//1
 			ItemStack edragon = new ItemStack(Material.EYE_OF_ENDER);         
@@ -357,17 +356,18 @@ public void loadMountDetails() {
 			ep.setItemMeta(epm);
 			setStuff(ep, "Smaragd", sSmaragd);
 	
-}
+	}
 
-public void loadPetDetails() {
-	
-	
-	
-}
+		public void loadPetDetails() {
+			
+			
+			
+		}
 	
 	public static Main getInstance() {
 		return instance;
 	}
+	
 }
 
 

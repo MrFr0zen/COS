@@ -2,6 +2,7 @@ package ch.zombv.co.CosListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.bukkit.Bukkit;
 import org.bukkit.DyeColor;
@@ -242,7 +243,33 @@ public class ChestBlockEvent implements Listener {
 				p.openInventory(inv);
 				
 				
-				} 
+		 } else if(e.getCurrentItem().equals(items)) {
+			 
+			 if(Main.getInstance().getChestapi().getChests(p.getUniqueId().toString(), "Bronze") > 0) {
+				 int rarityRandom = (int) (Math.random() * 999);
+				 
+				 if(rarityRandom < 500) {
+					 //bronze
+					 
+				 } else if(rarityRandom > 499 && rarityRandom < 800) {
+					  //silver
+				 } else if(rarityRandom > 799 && rarityRandom < 900) {
+					 //gold
+				 } else if(rarityRandom > 899 && rarityRandom < 950) {
+					 //smaragd
+				 } else if(rarityRandom > 949 && rarityRandom < 975) {
+					 //diamant
+				 } else if(rarityRandom > 974 && rarityRandom < 990) {
+					 //platin
+				 } else if(rarityRandom > 989 && rarityRandom < 1000) {
+					 //legendary
+				 }
+			 }
+			 p.closeInventory();
+			 
+		 }
+			
+			
 			} else if(e.getInventory().getName().equals("§4Kaufbestätigung: §cBronzekiste")) {
 				
 				p.closeInventory();
@@ -458,6 +485,7 @@ public class ChestBlockEvent implements Listener {
 											
 										}
 								  }
+								  
 							}
 				 
 
