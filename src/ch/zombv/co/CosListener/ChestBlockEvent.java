@@ -2,8 +2,6 @@ package ch.zombv.co.CosListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-
 import org.bukkit.Bukkit;
 import org.bukkit.DyeColor;
 import org.bukkit.Location;
