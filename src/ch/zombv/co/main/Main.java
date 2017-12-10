@@ -22,7 +22,7 @@ import ch.zombv.co.commands.ForceNPCSpawn;
 import ch.zombv.co.commands.SetVillagerSpawn;
 
 public class Main extends JavaPlugin {
-	
+//1	
 	
 	private static Main instance;
 	private MySQL mysql;
