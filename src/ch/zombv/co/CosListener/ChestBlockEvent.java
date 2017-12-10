@@ -264,6 +264,7 @@ public class ChestBlockEvent implements Listener {
 				 } else if(rarityRandom > 989 && rarityRandom < 1000) {
 					 //legendary
 				 }
+				 p.sendMessage(Integer.toString(rarityRandom));
 			 }
 			 p.closeInventory();
 			 
